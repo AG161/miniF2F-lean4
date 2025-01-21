@@ -10,8 +10,8 @@ import MiniF2F.Minif2fImport
 
 open BigOperators Real Nat Topology
 
-theorem cbrt_one_eq_one (y : ℝ) (h₁ : y ^ 3 = 1) : y = 1 := by
-  sorry
+/-
+theorem cbrt_one_eq_one (y : ℝ) (h₁ : y ^ 3 = 1) : y = 1 := by sorry
 
 lemma lemma1_cbrt (y : ℝ) (h₁ : y ^ 3 = 1) : (y - 1) * (y ^ 2 + y + 1) = 0 := by sorry
 
@@ -49,7 +49,26 @@ theorem mathd_numbertheory_326 (n : ℕ) (h₀ : (↑n - 1) * ↑n * (↑n + 1) 
   : n + 1 = 10 := by sorry
 
 lemma lemma1_326 (n : ℕ) (n : ℕ) (h₀ : (↑n - 1) * ↑n * (↑n + 1) = (720 : ℤ)) : (n : ℤ) ^ 2 ≥ 0 := by
-  nlinarith
+  sorry
 
 lemma lemma2_326 (n : ℕ) (h₀ : (↑n - 1) * ↑n * (↑n + 1) = (720 : ℤ)) (h₁ : (n : ℤ) ^ 2 ≥ 0) :
   n + 1 = 10 := by sorry
+-/
+
+theorem amc12a_2015_p10_N (x y : ℕ) (h₀ : 0 < y) (h₁ : y < x) (h₂ : x + y + x * y = 80) : x = 26 := by
+  sorry
+
+lemma lemma1_p10 (x y : ℕ) (h₀ : 0 < y) (h₁ : y < x) (h₂ : x + y + x * y = 80) :
+  (x + 1) * (y + 1) = 81 := by sorry
+
+lemma lemma2_p10 (x y : ℕ) (h₀ : 0 < y) (h₁ : y < x) (h₂ : x + y + x * y = 80)
+  (h₃ : (x + 1) * (y + 1) = 81) : x = 26 := by sorry
+
+theorem amc12a_2008_p8 (x y : ℝ) (h₀ : 0 < x ∧ 0 < y) (h₁ : y ^ 3 = 1)
+    (h₂ : 6 * x ^ 2 = 2 * (6 * y ^ 2)) : x ^ 3 = 2 * Real.sqrt 2 := by sorry
+
+lemma lemma1_p8 (x y : ℝ) (h₀ : 0 < x ∧ 0 < y) (h₁ : y ^ 3 = 1)
+    (h₂ : 6 * x ^ 2 = 2 * (6 * y ^ 2)) : y = 1 := by sorry
+
+lemma lemma2_p8 (x y : ℝ) (h₀ : 0 < x ∧ 0 < y) (h₁ : y ^ 3 = 1)
+    (h₂ : 6 * x ^ 2 = 2 * (6 * y ^ 2)) (h₃ : y = 1) : x ^ 3 = 2 * Real.sqrt 2 := by sorry
